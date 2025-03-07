@@ -11,3 +11,7 @@ async def root():
 @app.get("/posts")
 async def get_posts():
     return {"data": "Imagine a post here"}
+
+@app.post("/createposts")
+async def create_posts():
+    return {"message": "Successfully created post."}
